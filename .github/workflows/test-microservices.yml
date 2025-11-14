@@ -89,7 +89,7 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Rodar testes
+      - name: Run tests
         working-directory: ./burguer-app/user-service
         run: |
           pytest -v --cov=models --cov=services --cov=config --cov=controllers
